@@ -1,5 +1,5 @@
 # InstagramCommentsbot
-some shitty celeb comments bot i made a decade time ago
+some shitty celeb comments bot i made a decade ago, might make the code better
 
 # How does it work?
 it scrapes the celebrity followers and mentions them in your given instagram post
