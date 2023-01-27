@@ -1,5 +1,6 @@
 import os, random, colorama, sys
 import time
+from keyauth import api
 import random
 from colorama import Fore, Back, Style
 from colorama import init
@@ -36,6 +37,29 @@ def logo():
     except KeyboardInterrupt:
         sys.exit()
 clear()
+
+print("Initializing...")
+
+
+def getchecksum():
+    md5_hash = hashlib.md5()
+    file = open(''.join(sys.argv), "rb")
+    md5_hash.update(file.read())
+    digest = md5_hash.hexdigest()
+    return digest
+
+
+keyauthapp = api(
+    name = "", #App name (Manage Applications --> Application name)
+    ownerid = "", #Owner ID (Account-Settings --> OwnerID)
+    secret = "", #App secret(Manage Applications --> App credentials code)
+    version = "1.0",
+    hash_to_check = getchecksum()
+)
+
+key = input('Enter your license: ')
+keyauthapp.license(key)
+
 logo()
 input("\t\t\t\t   [\x1b[38;5;199m+\x1b[0m] Press [\x1b[38;5;199mENTER\x1b[0m] to Continue   ")
 global acc, username, password, post2122, commentdd
