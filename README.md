@@ -9,6 +9,6 @@ it scrapes the celebrity followers and mentions them in your given instagram pos
 # How-To-Use
 just run it lmao
 
-#i might post a working instagram account generator (clean code not spaghetti code like this one)
+# i might post a working instagram account generator (clean code not spaghetti code like this one)
 
 i made it files just so you can just run without taking input from the program, for lazies by lazy
