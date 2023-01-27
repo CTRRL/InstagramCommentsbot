@@ -1,12 +1,12 @@
 # InstagramCommentsbot
 some shitty celeb comments bot i made a decade time ago
 
-#How does it work?
+# How does it work?
 it scrapes the celebrity followers and mentions them in your given instagram post
 ![image](https://user-images.githubusercontent.com/100001861/215042286-53ca7b45-a542-4961-891c-ec2662abb6ae.png)
 
 
-#How-To-Use
+# How-To-Use
 just run it lmao
 
 #i might post a working instagram account generator (clean code not spaghetti code like this one)
